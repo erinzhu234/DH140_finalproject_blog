@@ -2,9 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/DH140_finalproject.html",
       "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html",
-      "/posts/DH140_finalproject.html"
+      "/posts/welcome/index.html"
     ]
   }
 ]

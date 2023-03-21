@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Ben Winjum">
-<meta name="dcterms.date" content="2023-03-06">
-<meta name="description" content="Testing Quarto">
 
-<title>myblog - First File</title>
+<title>myblog – dh140_finalproject</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -124,6 +121,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -166,46 +166,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">First File</h1>
-                  <div>
-        <div class="description">
-          Testing Quarto
-        </div>
-      </div>
-                </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Ben Winjum </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">March 6, 2023</p>
-      </div>
-    </div>
-    
-      <div>
-      <div class="quarto-title-meta-heading">Modified</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date-modified">March 6, 2023</p>
-      </div>
-    </div>
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
@@ -214,50 +175,517 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-
-<p><a href="https://github.com/MuseumofModernArt/collection"><em>The Museum of Modern Art (MoMA) Collection</em></a></p>
-<p><em>DESCRIPTION</em></p>
+<section id="exploring-themes-in-modern-art" class="level1">
+<h1>Exploring Themes in Modern Art</h1>
+<p>Erin Zhu 3/20/2023</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<p><a href="https://github.com/MuseumofModernArt/collection">The Museum of Modern Art (MoMA) Collection</a></p>
 <ul>
 <li><p>The Museum of Modern Art (MoMA) acquired its first artworks in 1929, the year it was established. Today, the Museum’s evolving collection contains almost 200,000 works from around the world spanning the last 150 years. The collection includes an ever-expanding range of visual expression, including painting, sculpture, printmaking, drawing, photography, architecture, design, film, and media and performance art.</p></li>
 <li><p>The Artists dataset contains 15,243 records, representing all the artists who have work in MoMA’s collection and have been cataloged in our database. It includes basic metadata for each artist, including name, nationality, gender, birth year, death year, Wiki QID, and Getty ULAN ID.</p></li>
+<li><p>This project explores the collection and aims to reveal what artworks are more flavored in modern arts, or in this collection, cutting from different aspects such as themes, scales, and gender ratio of the artworks.</p></li>
 </ul>
-<p><em>MOTIVATION</em></p>
+</section>
+<section id="research-topic" class="level3">
+<h3 class="anchored" data-anchor-id="research-topic">Research Topic</h3>
 <ul>
-<li>This dataset contains a good representation of information about modern arts. Through this dataset, we can see what are the trends in modern arts today based on analysis of the data, including information about the art themselves and the artists who created them. I have been interested in the underlying trends in all forms of arts, leading me to look at this dataset for this project.</li>
+<li>Through analysis on the distribution of the artists and different scales of the artwork, this project researches the underlying information in this dataset, and studies implicit determinants that makes an artwork more flavored in modern art. This project focuses on social and economy environment, gender, and nationality of artists to give a general assessment of possible aspects that affects the frequency of appearance of artworks in this collection and explore the underlying reasons for the pervalence of such artworks.</li>
 </ul>
-<p><em>QUESTIONS</em></p>
+</section>
+<section id="questions" class="level3">
+<h3 class="anchored" data-anchor-id="questions">Questions</h3>
 <ul>
-<li>What is the most type of art that is included in the collection?</li>
-<li>What are the most popular forms of art in this collection and what can this tell about this collection?</li>
-<li>What themes are the most common in modern arts?</li>
-<li>What can we tell from the artists whose arts is collected? How are the race, nationalities, gender distributed, and what can we know from the distribution?</li>
+<li>What makes a certain type of artwork more common in modern arts and in this collection? Is it gender? Is it history backgrounds? Is it nationality, or even the size of the artwork itself?</li>
+<li>Are there underrepresented groups in this collection? If there are, what are these groups and what might be the cause of the underrepresentation?</li>
 </ul>
-<p><em>explores and presents information about your data</em></p>
+</section>
+<section id="motivation" class="level3">
+<h3 class="anchored" data-anchor-id="motivation">Motivation</h3>
 <ul>
-<li>This can include summary information about the data, summary statistics where appropriate, an identification of where there may be missing/incorrect/outlier data, and data preprocessing (to be done after the analysis)</li>
-<li>It should include at least 4 exploratory data visualizations (to be done after creating visualizations)</li>
+<li>Through exploring this dataset, I gradually becomes curious about these questions. The dataset itself is too large to find a certain pattern in it, but with the help of tools, it is possible for us to explore the whole dataset in condensed visualizations.</li>
+<li>Based off the methods we learned in class, I was interested in how mapping and text analysis could be applied in this dataset to visualize some invisible patterns in this dataset and hopefully approach my research questions and provide some insights into what are we seeing and not seeing in seemingly unbiased artwork collections and even some underrepresented artworks and groups in this collection. I hope that this project would allow us to see some implicit factors that are affecting our flavor of artworks, including reasonable factors and underlying biases.</li>
 </ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># begin of analysis</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># visualization 1</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># idea: distribution of types or forms of arts</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># visualization 2</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># idea: if possible, distribution of themes of arts</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># visualization 3</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># idea: distribution of some traits of artists</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># visualization 4</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># idea: more analysis on artists</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<ul>
+<li>TODO: explain your data and your analytical process</li>
+</ul>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<section id="data-exploration" class="level3">
+<h3 class="anchored" data-anchor-id="data-exploration">Data Exploration</h3>
+<p>Let’s start off by importing the dataset and sample some rows in the datasets.</p>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import packages</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> string</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># importing data</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>artists_df <span class="op">=</span> pd.read_csv(<span class="st">'https://github.com/MuseumofModernArt/collection/raw/master/Artists.csv'</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>artworks_df <span class="op">=</span> pd.read_csv(<span class="st">'https://github.com/MuseumofModernArt/collection/raw/master/Artworks.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>artists_df.sample(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>ConstituentID</th>
+      <th>DisplayName</th>
+      <th>ArtistBio</th>
+      <th>Nationality</th>
+      <th>Gender</th>
+      <th>BeginDate</th>
+      <th>EndDate</th>
+      <th>Wiki QID</th>
+      <th>ULAN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>13202</th>
+      <td>44844</td>
+      <td>Eladio Dieste</td>
+      <td>Uruguayan, 1917–2000</td>
+      <td>Uruguayan</td>
+      <td>Male</td>
+      <td>1917</td>
+      <td>2000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1639</th>
+      <td>1856</td>
+      <td>Gabriel Fernández Ledesma</td>
+      <td>Mexican, 1900–1982</td>
+      <td>Mexican</td>
+      <td>Male</td>
+      <td>1900</td>
+      <td>1982</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>8049</th>
+      <td>10117</td>
+      <td>Jernbolaget, Eskilstuna, Sweden</td>
+      <td>est. 1868</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1868</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>14462</th>
+      <td>67948</td>
+      <td>Pedro Manrique Figueroa</td>
+      <td>Colombian, born 1934</td>
+      <td>Colombian</td>
+      <td>Male</td>
+      <td>1934</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>14841</th>
+      <td>74798</td>
+      <td>Mikhail Fadeev</td>
+      <td>Russian</td>
+      <td>Russian</td>
+      <td>Male</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-scrolled="true" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>artworks_df.sample(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Title</th>
+      <th>Artist</th>
+      <th>ConstituentID</th>
+      <th>ArtistBio</th>
+      <th>Nationality</th>
+      <th>BeginDate</th>
+      <th>EndDate</th>
+      <th>Gender</th>
+      <th>Date</th>
+      <th>Medium</th>
+      <th>...</th>
+      <th>ThumbnailURL</th>
+      <th>Circumference (cm)</th>
+      <th>Depth (cm)</th>
+      <th>Diameter (cm)</th>
+      <th>Height (cm)</th>
+      <th>Length (cm)</th>
+      <th>Weight (kg)</th>
+      <th>Width (cm)</th>
+      <th>Seat Height (cm)</th>
+      <th>Duration (sec.)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>58443</th>
+      <td>Flipper</td>
+      <td>Blinky Palermo</td>
+      <td>4474</td>
+      <td>(German, 1943–1977)</td>
+      <td>(German)</td>
+      <td>(1943)</td>
+      <td>(1977)</td>
+      <td>(Male)</td>
+      <td>1970</td>
+      <td>Screenprint on two sheets</td>
+      <td>...</td>
+      <td>http://www.moma.org/media/W1siZiIsIjUyNzM4OCJd...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>80.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>60.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>51834</th>
+      <td>Rubber Dummies, Metro Goldwyn Mayer Studios, H...</td>
+      <td>Edward Weston</td>
+      <td>6329</td>
+      <td>(American, 1886–1958)</td>
+      <td>(American)</td>
+      <td>(1886)</td>
+      <td>(1958)</td>
+      <td>(Male)</td>
+      <td>1939</td>
+      <td>Gelatin silver print</td>
+      <td>...</td>
+      <td>http://www.moma.org/media/W1siZiIsIjIwOTA2NSJd...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>19.3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>24.4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>135340</th>
+      <td>Catalytic text: 20 January 2017. First line: “...</td>
+      <td>Ben Kinmont</td>
+      <td>41829</td>
+      <td>(American, born 1963)</td>
+      <td>(American)</td>
+      <td>(1963)</td>
+      <td>(0)</td>
+      <td>(Male)</td>
+      <td>2018</td>
+      <td>Newspaper ad</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>46741</th>
+      <td>Untitled (plate 8) from the album Champs Délic...</td>
+      <td>Man Ray (Emmanuel Radnitzky)</td>
+      <td>3716</td>
+      <td>(American, 1890–1976)</td>
+      <td>(American)</td>
+      <td>(1890)</td>
+      <td>(1976)</td>
+      <td>(Male)</td>
+      <td>1922</td>
+      <td>Gelatin silver print after rayograph</td>
+      <td>...</td>
+      <td>http://www.moma.org/media/W1siZiIsIjE5OTI3NyJd...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>23.2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>16.7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>72949</th>
+      <td>The Knights (Les Chevaliers) from Xylographs (...</td>
+      <td>Vasily Kandinsky</td>
+      <td>2981</td>
+      <td>(French, born Russia. 1866–1944)</td>
+      <td>(French)</td>
+      <td>(1866)</td>
+      <td>(1944)</td>
+      <td>(Male)</td>
+      <td>1909 (executed 1907)</td>
+      <td>One from a portfolio of eight heliogravures af...</td>
+      <td>...</td>
+      <td>http://www.moma.org/media/W1siZiIsIjEzNDkwOSJd...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>14.3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>14.5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 29 columns</p>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>artworks_df[<span class="st">'Title'</span>].sample(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<pre><code>79056                                    Light in Far Field
+137988                                   Cóctel (Cocktail)
+3276                                          Bowl (no. 93)
+21442     THE LITTLE FISH AND THE FISHERMAN (plate; volu...
+135936                  Knifing Victim I, Chicago, Illinois
+81267     Tugendhat House, Brno, Czech Republic, Second ...
+18398     Plate (folio 17) from Six Geometric Figures an...
+122568                              Itinerant Basket-makers
+39626                       FONTAINE DU MARCHÉ SAINT-HONORÉ
+5777                      From Winters Gloom to Summers Joy
+Name: Title, dtype: object</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>artworks_df[<span class="st">'Medium'</span>].sample(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<pre><code>19191        One from an illustrated book with 329 woodcuts
+22581                                                   NaN
+127644                                 Gelatin silver print
+974                              Plastic, metal, and rubber
+28845     Wood engraving from an illustrated book with 2...
+41871                                  Gelatin silver print
+95754                                                Poster
+78862                         Pen and ink and wash on paper
+97238                                  Gelatin silver print
+78549                  Watercolor and crayon on graph paper
+Name: Medium, dtype: object</code></pre>
+</div>
+</div>
+<p>Through the example lines, we can see that the title and the medium column are very detailed and thus hard to use as raw to generate summary statistics. * Some title column contains not only the titles of the artworks but also some other information. A good way would be to keep only the first part of the title, which is the part before the first ‘,’, to keep as the title of the artwork. * The original plan was to create pie plot for types of artworks and relate with other data. Since the ‘Medium’ column is much more detailed than expected, it would be hard to follow the original plan. Therefore, I decided to explore my topics cutting in from other columns.</p>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This cell takes some time to run</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>artworks_df[<span class="st">'First Title'</span>] <span class="op">=</span> <span class="st">'-'</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> title <span class="kw">in</span> artworks_df[<span class="st">'Title'</span>]:</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">type</span>(title) <span class="kw">is</span> <span class="bu">str</span>: </span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>        artworks_df[<span class="st">'First Title'</span>][count] <span class="op">=</span> title.split(<span class="st">','</span>)[<span class="dv">0</span>]</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>        count <span class="op">=</span> count <span class="op">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/tmp/ipykernel_70/1156968381.py:6: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  artworks_df['First Title'][count] = title.split(',')[0]</code></pre>
+</div>
+</div>
+<p>Now, there will be a new column in the dataframe containing only the first part of the title that will be used for sentiment analysis in the analysis part.</p>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a list for ages of artists</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>ages <span class="op">=</span> []</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bd <span class="kw">in</span> artists_df[<span class="st">'BeginDate'</span>]:</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> bd <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>        count <span class="op">=</span> count <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> artists_df[<span class="st">'EndDate'</span>][count] <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>        age <span class="op">=</span> <span class="dv">2023</span> <span class="op">-</span> bd</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>        ages <span class="op">=</span> ages <span class="op">+</span> [age]</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>        count <span class="op">=</span> count <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>        age <span class="op">=</span> artists_df[<span class="st">'EndDate'</span>][count] <span class="op">-</span> bd</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>        ages <span class="op">=</span> ages <span class="op">+</span> [age]</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>        count <span class="op">=</span> count <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a><span class="co"># exclude some impossible values</span></span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>ages <span class="op">=</span> [age <span class="cf">for</span> age <span class="kw">in</span> ages <span class="cf">if</span> age <span class="op">&lt;</span> <span class="dv">120</span>]</span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>plt.hist(ages)</span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Distribution of ages of artists'</span>)</span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Age'</span>)</span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Frequency'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="8">
+<pre><code>Text(0, 0.5, 'Frequency')</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="DH140_finalproject_files/figure-html/cell-9-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Above is the distribution of ages of artists in this collection with impossible values excluded. We can see that the majority of artists in this collection ages from around 50 to 90.</p>
+<div class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a list for counts of artists with and without Wiki QID</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="bu">type</span> <span class="op">=</span> [<span class="st">'With Wiki QID'</span>, <span class="st">'Without Wiki QID'</span>]</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">0</span>]</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> artists_df[<span class="st">'Wiki QID'</span>]:</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> pd.isna(i):</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>        count[<span class="dv">1</span>] <span class="op">=</span> count[<span class="dv">1</span>] <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>        count[<span class="dv">0</span>] <span class="op">=</span> count[<span class="dv">0</span>] <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>plt.barh(<span class="bu">type</span>, count)</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> index, value <span class="kw">in</span> <span class="bu">enumerate</span>(count):</span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>    plt.text(value, index,<span class="bu">str</span>(value))</span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Artist Wiki QID status'</span>)</span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Frequency'</span>)</span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="DH140_finalproject_files/figure-html/cell-10-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>The above plot shows the number of artists with and without Wiki QID. We can see that the majority of artists in this collection does not have a Wiki QID, implying that this collection probably does not have a tendency towards famous artists.</p>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>date_list <span class="op">=</span> []</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> artworks_df[<span class="st">'Date'</span>]:</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="kw">not</span> pd.isna(i)) <span class="kw">and</span> i.isnumeric() <span class="kw">and</span> <span class="bu">len</span>(i) <span class="op">==</span> <span class="dv">4</span>:</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    date_list <span class="op">=</span> date_list <span class="op">+</span> [<span class="bu">int</span>(i)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>plt.hist(date_list)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Distribution of Dates of Artworks'</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Frequency'</span>)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="DH140_finalproject_files/figure-html/cell-12-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Above is a histogram on the distribution of dates that artworks are created. We can see that the graph is right skewed, which means it flavors artworks that are more contemporary as a modern art collection, and has the most artworks created from early 1900s to 2000s.</p>
+<div class="cell" data-scrolled="true" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>gender <span class="op">=</span> [<span class="st">'Female'</span>, <span class="st">'Male'</span>, <span class="st">'Non-Binary'</span>, <span class="st">'N/A'</span>]</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>gender_count <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>]</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> artists_df[<span class="st">'Gender'</span>]:</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> pd.isna(i):</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>        gender_count[<span class="dv">3</span>] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> i.lower() <span class="op">==</span> <span class="st">'female'</span>:</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>        gender_count[<span class="dv">0</span>] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> i.lower() <span class="op">==</span> <span class="st">'male'</span>:</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>        gender_count[<span class="dv">1</span>] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> i.lower() <span class="op">==</span> <span class="st">'non-binary'</span>:</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>        gender_count[<span class="dv">2</span>] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>        gender_count[<span class="dv">3</span>] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>plt.pie(gender_count, labels<span class="op">=</span>gender, autopct<span class="op">=</span><span class="st">'</span><span class="sc">%1.1f%%</span><span class="st">'</span>)</span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Artists Gender'</span>)</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="DH140_finalproject_files/figure-html/cell-13-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>From the plot, we can see that most of the artists in this collection are male, 15.4% of them are female, and only nearly neglectable part of them are non-binary. This shows that male artists are more recognized and acknowledged generally within the range of collection. As shown on former graph, the major range of collection for this dataset is between 1900 and 2010, to explore more about how gender of artists could affect themselves and their artworks and how it combines with other factors such as dates and history backgrounds, it is worthy do dig deeper into the relationships of gender and other data in the following focused analysis.</p>
+</section>
+<section id="focused-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="focused-analysis">Focused Analysis</h3>
 <ul>
-<li>might contain some analysis of the visualizations here</li>
-<li>or do a markdown cell after each visualization to place analysis</li>
+<li><p>Through some exploratoration on the dataset, we can see that this collection does not have uniform distribution on a lot of aspects of artists and artworks. It provides some general insights on the dataset, but not enough to allow us to make conclutions or imply some other underlying factors that causes such distributions.</p></li>
+<li><p>The next session includes a further analysis of the data and provides visualizations to provide a deeper look into the dataset and useful insights that cuts in from a more detailed look to explore the research question.</p></li>
 </ul>
+<div class="cell" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># add a new column 'Area' to the dataframe, rounded up to two decimals, in cm^2</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>artworks_df[<span class="st">'Area'</span>] <span class="op">=</span> <span class="st">'-'</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> a <span class="kw">in</span> artworks_df[<span class="st">'Area'</span>]:</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> pd.isna(artworks_df[<span class="st">'Height (cm)'</span>][count]) <span class="kw">or</span> pd.isna(artworks_df[<span class="st">'Width (cm)'</span>][count]):</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>    artworks_df[<span class="st">'Area'</span>][count] <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    count <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    artworks_df[<span class="st">'Area'</span>][count] <span class="op">=</span> <span class="bu">round</span>(artworks_df[<span class="st">'Height (cm)'</span>][count] <span class="op">*</span> artworks_df[<span class="st">'Width (cm)'</span>][count], <span class="dv">2</span>)</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    count <span class="op">+=</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/tmp/ipykernel_70/3976049913.py:10: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  artworks_df['Area'][count] = round(artworks_df['Height (cm)'][count] * artworks_df['Width (cm)'][count], 2)
+/tmp/ipykernel_70/3976049913.py:7: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  artworks_df['Area'][count] = 0</code></pre>
+</div>
+</div>
+<p>TODO: analysis 1</p>
+</section>
+</section>
+<section id="discussion" class="level2">
+<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
+<ul>
+<li>TODO: what does the analysis show, big picture, and how are they useful</li>
+<li>link back to research questions</li>
+</ul>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+</section>
+</section>
+<section id="reference" class="level2">
+<h2 class="anchored" data-anchor-id="reference">Reference</h2>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
