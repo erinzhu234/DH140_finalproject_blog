@@ -221,7 +221,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="data-exploration" class="level3">
 <h3 class="anchored" data-anchor-id="data-exploration">Data Exploration</h3>
 <p>Let’s start off by importing the dataset and sample some rows in the datasets.</p>
-<div class="cell" data-execution_count="19">
+<div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import packages</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -270,64 +270,64 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </thead>
   <tbody>
     <tr>
-      <th>14167</th>
-      <td>49295</td>
-      <td>George Kastner</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2727</th>
-      <td>3059</td>
-      <td>Isamu Kenmochi</td>
-      <td>Japanese, 1912–1971</td>
-      <td>Japanese</td>
+      <th>12923</th>
+      <td>42593</td>
+      <td>Jenova (Xinghan) Chen</td>
+      <td>Chinese, born 1981</td>
+      <td>Chinese</td>
       <td>Male</td>
-      <td>1912</td>
-      <td>1971</td>
+      <td>1981</td>
+      <td>0</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>10526</th>
-      <td>29875</td>
-      <td>Anon</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <th>3739</th>
+      <td>4179</td>
+      <td>Zühtü Müritoğlu</td>
+      <td>Turkish, 1906–1992</td>
+      <td>Turkish</td>
       <td>Male</td>
-      <td>0</td>
+      <td>1906</td>
+      <td>1992</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3488</th>
+      <td>3902</td>
+      <td>Clement Meadmore</td>
+      <td>Australian, 1929–2005</td>
+      <td>Australian</td>
+      <td>Male</td>
+      <td>1929</td>
+      <td>2005</td>
+      <td>Q1100270</td>
+      <td>500105583.0</td>
+    </tr>
+    <tr>
+      <th>2198</th>
+      <td>2478</td>
+      <td>Peter Hamburger</td>
+      <td>American, born 1941</td>
+      <td>American</td>
+      <td>Male</td>
+      <td>1941</td>
       <td>0</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>12382</th>
-      <td>39013</td>
-      <td>Sophie Peters</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <th>12289</th>
+      <td>38485</td>
+      <td>Jeffery Keedy</td>
+      <td>American, born 1957</td>
+      <td>American</td>
+      <td>Male</td>
+      <td>1957</td>
       <td>0</td>
-      <td>0</td>
       <td>NaN</td>
       <td>NaN</td>
-    </tr>
-    <tr>
-      <th>6865</th>
-      <td>7810</td>
-      <td>Sarah Lucas</td>
-      <td>British, born 1962</td>
-      <td>British</td>
-      <td>Female</td>
-      <td>1962</td>
-      <td>0</td>
-      <td>Q267786</td>
-      <td>500115024.0</td>
     </tr>
   </tbody>
 </table>
@@ -369,122 +369,122 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </thead>
   <tbody>
     <tr>
-      <th>100823</th>
-      <td>Poster for Ten from Rutgers University, Bianch...</td>
-      <td>Bill Hine</td>
-      <td>73972</td>
-      <td>NaN</td>
-      <td>()</td>
-      <td>(0)</td>
-      <td>(0)</td>
-      <td>()</td>
-      <td>1965</td>
-      <td>Offset (CONFIRM)</td>
+      <th>25907</th>
+      <td>In-text plate (page 91) from Le Poème de l'ang...</td>
+      <td>Le Corbusier (Charles-Édouard Jeanneret)</td>
+      <td>3426</td>
+      <td>(French, born Switzerland. 1887–1965)</td>
+      <td>(French)</td>
+      <td>(1887)</td>
+      <td>(1965)</td>
+      <td>(Male)</td>
+      <td>1947–53, published 1955</td>
+      <td>Lithograph from an illustrated book with 121 l...</td>
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>55.562611</td>
+      <td>39.6</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>43.180086</td>
+      <td>30.8</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>18493</th>
-      <td>Plate (page 50) from TEGNINGER I MØRKET</td>
-      <td>Troels Wörsel</td>
-      <td>6453</td>
-      <td>(Danish, born 1950)</td>
-      <td>(Danish)</td>
-      <td>(1950)</td>
+      <th>16808</th>
+      <td>Plate 7 from POEMS FROM THE CANTO GENERAL</td>
+      <td>David Alfaro Siqueiros</td>
+      <td>5454</td>
+      <td>(Mexican, 1896–1974)</td>
+      <td>(Mexican)</td>
+      <td>(1896)</td>
+      <td>(1974)</td>
+      <td>(Male)</td>
+      <td>1966-1968</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>57.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>104.2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>29102</th>
+      <td>Amer Citron (Bitter Lemon) (plate facing page ...</td>
+      <td>Georges Rouault</td>
+      <td>5053</td>
+      <td>(French, 1871–1958)</td>
+      <td>(French)</td>
+      <td>(1871)</td>
+      <td>(1958)</td>
+      <td>(Male)</td>
+      <td>1935, published 1938</td>
+      <td>Aquatint, etching, and drypoint from an illust...</td>
+      <td>...</td>
+      <td>http://www.moma.org/media/W1siZiIsIjE4OTQ1OCJd...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>31.5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>21.7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>66936</th>
+      <td>The Beggars</td>
+      <td>David Sterenberg</td>
+      <td>5648</td>
+      <td>(American)</td>
+      <td>(American)</td>
+      <td>(0)</td>
       <td>(0)</td>
       <td>(Male)</td>
-      <td>1977</td>
       <td>NaN</td>
+      <td>Etching</td>
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>24.300000</td>
+      <td>34.8</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>17.400000</td>
+      <td>27.9</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>77722</th>
-      <td>Spiraling Eyes, frontispiece, from the illustr...</td>
-      <td>Louise Bourgeois</td>
-      <td>710</td>
-      <td>(American, born France. 1911–2010)</td>
+      <th>52787</th>
+      <td>Vacation in Tombstone, Arizona</td>
+      <td>Richard Day</td>
+      <td>1418</td>
+      <td>(American, born Canada. 1896–1972)</td>
       <td>(American)</td>
-      <td>(1911)</td>
-      <td>(2010)</td>
-      <td>(Female)</td>
-      <td>1999</td>
-      <td>Drypoint, with hand additions</td>
+      <td>(1896)</td>
+      <td>(1972)</td>
+      <td>(Male)</td>
+      <td>1941</td>
+      <td>Gelatin silver print</td>
       <td>...</td>
-      <td>http://www.moma.org/media/W1siZiIsIjI0MzUzMyJd...</td>
+      <td>http://www.moma.org/media/W1siZiIsIjI1MjU3NSJd...</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>14.900000</td>
+      <td>24.8</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>12.600000</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2481</th>
-      <td>Easy Chair (Fauteuil Grand Confort)</td>
-      <td>Le Corbusier (Charles-Édouard Jeanneret), Pier...</td>
-      <td>3426, 2899, 4564</td>
-      <td>(French, born Switzerland. 1887–1965) (Swiss, ...</td>
-      <td>(French) (Swiss) (French)</td>
-      <td>(1887) (1896) (1903)</td>
-      <td>(1965) (1967) (1999)</td>
-      <td>(Male) (Male) (Female)</td>
-      <td>Designed 1928 (this example 1959)</td>
-      <td>Chrome-plated tubular steel, horsehair, down, ...</td>
-      <td>...</td>
-      <td>http://www.moma.org/media/W1siZiIsIjIyOTMxNCJd...</td>
-      <td>NaN</td>
-      <td>70.5</td>
-      <td>NaN</td>
-      <td>66.040100</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>76.200200</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>70454</th>
-      <td>With Heart of Sethoscope Beat from the series ...</td>
-      <td>Reva Urban</td>
-      <td>6037</td>
-      <td>(American, 1925–1987)</td>
-      <td>(American)</td>
-      <td>(1925)</td>
-      <td>(1987)</td>
-      <td>(Female)</td>
-      <td>1962</td>
-      <td>One from a series of fourteen lithographs</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>66.400000</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>66.300000</td>
+      <td>20.0</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -497,32 +497,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>artworks_df[<span class="st">'Title'</span>].sample(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
-<pre><code>11801     Plate (folio 17 verso) from AUTONOMIE DER FARBE
-124974                    Untitled from Tailleur de Coeur
-104739                      Die Aktion, vol. 6, no. 47/48
-13073           Sometimes a Traveler/There Lived in Egypt
-40278          HÔTEL DE MARBEUF. FAUBOURG SAINT-HONORÉ 31
-50974                          Saratoga Springs, New York
-128413                                     Present Memory
-74862                               Spectre of Kitty Hawk
-48550       Portland, Oregon. (JFK and others at airport)
-85851                             Untitled (Bondage Duck)
+<pre><code>66474                                                Lacing
+123368    Draft of the text for A Declaration; or the fu...
+8236      Box lid from SIETE POEMAS SAJONES/SEVEN SAXON ...
+134704                           FA N°71 from Alphabet Bété
+69978                                            Space Face
+115492                                         Moulin Rouge
+85993                                          Blue Moon #2
+87882     Exposure #31: N.Y.C., 249 W 34th Street, 01.02...
+8009      Plates from Pustynniki; Pustynnitsa. Dve poemy...
+85186                                    Alphabetical Order
 Name: Title, dtype: object</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>artworks_df[<span class="st">'Medium'</span>].sample(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
-<pre><code>14352                                                   NaN
-17784                                                   NaN
-79407                                            Lithograph
-65378                                            Lithograph
-8959      Etching, lift ground aquatint, and collagraph,...
-121261                                  7-inch vinyl record
-67273                                            Lithograph
-97634                                       Pencil on paper
-44106               Gelatin silver printing-out-paper print
-36144     Felt-tip pen and cut-and-pasted gelatin silver...
+<pre><code>51112                    Gelatin silver print, printed 1980
+38557                                  Albumen silver print
+113949                         Two chromogenic color prints
+61448     Offset lithograph from a portfolio of nineteen...
+28950                                                   NaN
+52047                                  Gelatin silver print
+118912             Periodical and two 12-inch vinyl records
+136054                             Pamphlet, offset printed
+73972          Synthetic polymer paint and pencil on canvas
+116302      One from a portfolio of seventeen photogravures
 Name: Medium, dtype: object</code></pre>
 </div>
 </div>
@@ -538,7 +538,7 @@ Name: Medium, dtype: object</code></pre>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>        artworks_df[<span class="st">'First Title'</span>][count] <span class="op">=</span> title.split(<span class="st">','</span>)[<span class="dv">0</span>]</span>
 <span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>        count <span class="op">=</span> count <span class="op">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/tmp/ipykernel_83/188276451.py:8: SettingWithCopyWarning: 
+<pre><code>/tmp/ipykernel_103/188276451.py:8: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
@@ -654,48 +654,6 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>nationality_country.columns <span class="op">=</span> [<span class="st">'Nationality'</span>, <span class="st">'Country'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="14">
-
-<div>
-
-<table class="dataframe table table-sm table-striped">
-  <thead>
-    <tr>
-      <th></th>
-      <th>Nationality</th>
-      <th>Country</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Aberdonian</td>
-      <td>Aberdeen</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Abkhaz</td>
-      <td>Abkhazia</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Abkhazian</td>
-      <td>Abkhazia</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Abrenian</td>
-      <td>Abra</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Abruzzese</td>
-      <td>Abruzzo</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
 </div>
 <div class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new column to store country name</span></span>
@@ -711,7 +669,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span>:</span>
 <span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>        count <span class="op">+=</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/tmp/ipykernel_83/3593956855.py:9: SettingWithCopyWarning: 
+<pre><code>/tmp/ipykernel_103/3593956855.py:9: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
@@ -738,12 +696,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>    artworks_df[<span class="st">'Area'</span>][count] <span class="op">=</span> <span class="bu">round</span>(artworks_df[<span class="st">'Height (cm)'</span>][count] <span class="op">*</span> artworks_df[<span class="st">'Width (cm)'</span>][count], <span class="dv">2</span>)</span>
 <span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>    count <span class="op">+=</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/tmp/ipykernel_83/658045223.py:10: SettingWithCopyWarning: 
+<pre><code>/tmp/ipykernel_103/658045223.py:10: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
   artworks_df['Area'][count] = round(artworks_df['Height (cm)'][count] * artworks_df['Width (cm)'][count], 2)
-/tmp/ipykernel_83/658045223.py:7: SettingWithCopyWarning: 
+/tmp/ipykernel_103/658045223.py:7: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
@@ -766,13 +724,13 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>artworks_df[<span class="st">'CODE'</span>]<span class="op">=</span>alpha3code(artworks_df.Country)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="21">
+<div class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a new column to store the sentiment analysis of the title</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>sia <span class="op">=</span> vader.SentimentIntensityAnalyzer()</span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>myStopWords <span class="op">=</span> <span class="bu">list</span>(string.punctuation) <span class="op">+</span> stopwords.words(<span class="st">'english'</span>)</span>
 <span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>porter <span class="op">=</span> PorterStemmer()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="24">
+<div class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>artworks_df[<span class="st">'Sentiment Score'</span>] <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
@@ -787,7 +745,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>    artworks_df[<span class="st">'Sentiment Score'</span>][count] <span class="op">=</span> score</span>
 <span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>    count <span class="op">+=</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/tmp/ipykernel_83/690819950.py:12: SettingWithCopyWarning: 
+<pre><code>/tmp/ipykernel_103/690819950.py:12: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
@@ -796,7 +754,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <p>In the above part, I was intended to create a column to store the sentiment score by text analyzing the title of the artworks. This does not came as I expected as most artworks have neutral titles and have 0 compound scores.</p>
 <p>Therefore, I switched my focus onto studying the relationships between size and date of the artworks, and the gender and nationality of the artists.</p>
-<div class="cell" data-execution_count="82">
+<div class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>date_min <span class="op">=</span> <span class="dv">3000</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>date_max <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> artworks_df[<span class="st">'Date'</span>]:</span>
@@ -815,12 +773,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 </div>
 <p>Since the ‘Date’ column in the artworks data does not only contain year, I only collected these with 4-digit year number.</p>
-<div class="cell" data-execution_count="86">
+<div class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a dataframe for every decade from 1760 to 2020</span></span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>decade <span class="op">=</span> [<span class="op">*</span><span class="bu">range</span>(<span class="dv">1760</span>, <span class="dv">2030</span>, <span class="dv">10</span>)]</span>
 <span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>date_df <span class="op">=</span> pd.DataFrame(decade, columns<span class="op">=</span>[<span class="st">'Date'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="117">
+<div class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create new columns for total number, gender, and average area</span></span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>date_df[<span class="st">'Count'</span>] <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>date_df[<span class="st">'Male'</span>] <span class="op">=</span> <span class="dv">0</span></span>
@@ -867,7 +825,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <span id="cb30-44"><a href="#cb30-44" aria-hidden="true" tabindex="-1"></a>date_df.Area <span class="op">/=</span> date_df.Count</span>
 <span id="cb30-45"><a href="#cb30-45" aria-hidden="true" tabindex="-1"></a>date_df.Area <span class="op">=</span> date_df.Area.<span class="bu">round</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="121">
+<div class="cell" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>date_df.plot(x<span class="op">=</span><span class="st">'Date'</span>, y<span class="op">=</span><span class="st">'Area'</span>, kind<span class="op">=</span><span class="st">'line'</span>)</span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Size of Artworks vs. Time'</span>)</span>
@@ -878,16 +836,21 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <p><img src="DH140_finalproject_files/figure-html/cell-24-output-1.png" class="img-fluid"></p>
 </div>
 </div>
-<div class="cell" data-execution_count="125">
+<p>The above graph shows the relationship of the size of artworks through time in the MoMA collection. We can see that there is roughly a exponentially increasing trend on the size of the artworks. This shows that there are more and more larger artworks in this collection. As shown in the distribution of dates of the artworks, this trend is not related to the amount of artworks of the time period in the collection.</p>
+<p>This could be a result of better environments that enables artists to obtain better materials to allow them to produce larger artworks. Meanwhile, it could also be caused by the improving size and environments of the museum, which acquires its first artwork in 1929. Larger area and better maintainence techniques of museums could enable more collection of larger artworks, also encouraging the creation of artworks of larger sizes.</p>
+<div class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>date_df.loc[date_df[<span class="st">'Date'</span>]<span class="op">&gt;=</span><span class="dv">1880</span>].plot(x<span class="op">=</span><span class="st">'Date'</span>, y<span class="op">=</span>[<span class="st">'Male'</span>, <span class="st">'Female'</span>, <span class="st">'Non-binary'</span>, <span class="st">'Other'</span>], kind<span class="op">=</span><span class="st">'bar'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="125">
+<div class="cell-output cell-output-display" data-execution_count="24">
 <pre><code>&lt;AxesSubplot: xlabel='Date'&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="DH140_finalproject_files/figure-html/cell-25-output-2.png" class="img-fluid"></p>
 </div>
 </div>
-<div class="cell" data-execution_count="144">
+<p>In the gender pie chart in the exploration part, I also mentioned that the gender distribution is the general distribution over all of the artists in the dataset. This graph visualizes the number of artists of different gender and the distribution over years. We can see that starting from 1960s, the ratio of female artists has been increasing, which means that more and more artworks by female artists are included in this collection, though it is still worth noting that the number of artworks by male artists is always the greatest.</p>
+<p>This could also be an indication of underrepresented groups in the collection. While the environment is harsher for female and non-binary artists, collection of museum could have mutual influences on the social environment, causing male artists to be easier recognized and acknowledged.</p>
+<p>Is is also worth noting that ‘Other’ includes all artworks by multiple artists and artists whose genders are not specified. The number of ‘Other’ artworks is also increasing with time, possibly proving the occurrence of more collaborated artworks.</p>
+<div class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>gender_list <span class="op">=</span> [<span class="st">'Male'</span>, <span class="st">'Female'</span>, <span class="st">'Non-binary'</span>, <span class="st">'Other'</span>]</span>
 <span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>area_list <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>]</span>
@@ -921,14 +884,14 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <span id="cb34-31"><a href="#cb34-31" aria-hidden="true" tabindex="-1"></a>        area_list[i] <span class="op">/=</span> area_count[i]</span>
 <span id="cb34-32"><a href="#cb34-32" aria-hidden="true" tabindex="-1"></a>    <span class="bu">round</span>(area_list[i], <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="145">
+<div class="cell" data-execution_count="26">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>gender_list.pop(<span class="dv">2</span>)</span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>area_list.pop(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="145">
+<div class="cell-output cell-output-display" data-execution_count="26">
 <pre><code>27525.76</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="146">
+<div class="cell" data-execution_count="27">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>plt.bar(gender_list, area_list)</span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Size of Artworks vs. Gender'</span>)</span>
 <span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Size (cm^2)'</span>)</span>
@@ -937,7 +900,10 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <p><img src="DH140_finalproject_files/figure-html/cell-28-output-1.png" class="img-fluid"></p>
 </div>
 </div>
-<div class="cell" data-execution_count="32">
+<p>This plot reveals a funny trend about the size of artworks by different genders. The MoMA collection contains a very large number of artworks, allowing this to be a generally applicable trend in this collection that artworks by female artists in this collection is larger in size compared to artworks by male artists.</p>
+<p>Based on the last gender bar graph, we can tell that there are prominently more artworks by male artists than female artists. Therefore, this phenomenom could be a result of female artists being harder to get recognized and acknowledged while their artworks being considered as part of the musuem’s collection. For female artists, larger artworks are more favorable and acknowledged in this collection.</p>
+<p>It is worth noting that since there is only two artworks by non-binary artists with size data, the average size of artworks by non-binary artists is remarkable greater than the other three. The dataset is too small to generate meaningful results, so I did not include them in this graph.</p>
+<div class="cell" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a new df storing data for each country/region</span></span>
 <span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>world <span class="op">=</span> gpd.read_file(gpd.datasets.get_path(<span class="st">'naturalearth_lowres'</span>))</span>
@@ -949,13 +915,13 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>location<span class="op">=</span>pd.read_csv(<span class="st">'https://raw.githubusercontent.com/melanieshi0120/COVID-19_global_time_series_panel_data/master/data/countries_latitude_longitude.csv'</span>)</span>
 <span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a>world<span class="op">=</span>world.merge(location,on<span class="op">=</span><span class="st">'name'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="34">
+<div class="cell" data-execution_count="29">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a new column to count the number of artworks for each country/region</span></span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>world[<span class="st">'Count'</span>] <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> c <span class="kw">in</span> artworks_df[<span class="st">'CODE'</span>]:</span>
 <span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>    world.loc[world[<span class="st">'CODE'</span>] <span class="op">==</span> c, <span class="st">'Count'</span>] <span class="op">+=</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="149">
+<div class="cell" data-execution_count="30">
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a new column for area</span></span>
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>world[<span class="st">'Area'</span>] <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>world[<span class="st">'AreaCount'</span>] <span class="op">=</span> <span class="dv">0</span></span>
@@ -969,10 +935,10 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a>world.Area <span class="op">/=</span> world.AreaCount</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="150">
+<div class="cell" data-execution_count="31">
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>world.Area <span class="op">=</span> world.Area.<span class="bu">round</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="44">
+<div class="cell" data-execution_count="32">
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a new column for sentiment </span></span>
 <span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>world[<span class="st">'Sentiment'</span>] <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -983,10 +949,10 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>world.Sentiment <span class="op">/=</span> world.Count</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="48">
+<div class="cell" data-execution_count="33">
 <div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>world.Sentiment <span class="op">=</span> world.Sentiment.<span class="bu">round</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="156">
+<div class="cell" data-execution_count="34">
 <div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot count world map</span></span>
 <span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>world.plot(column<span class="op">=</span><span class="st">'Count'</span>, scheme<span class="op">=</span><span class="st">"box_plot"</span>,</span>
 <span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>           figsize<span class="op">=</span>(<span class="dv">25</span>, <span class="dv">20</span>),</span>
@@ -1000,7 +966,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <p><img src="DH140_finalproject_files/figure-html/cell-35-output-1.png" class="img-fluid"></p>
 </div>
 </div>
-<div class="cell" data-execution_count="151">
+<p>Above is the distribution of the number of artworks in the MoMA collection, with red representing more artworks collected from this country/region. We can see that most artworks in this collection is from North America, South America, Austrialia, Europe, China, and India. Other than China and India, most artworks are collected from Western countries, with very few collections from north Asia, Africa, and a few North American countries/regions.</p>
+<p>Despite of the name “Museum of Modern Arts”, we can see that this dataset is not a great representation of modern arts of the world. It is skewed towards western modern arts and have most of its collection from only some part of the world and specific countries/regions.</p>
+<div class="cell" data-execution_count="35">
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot count world map</span></span>
 <span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>world.plot(column<span class="op">=</span><span class="st">'Area'</span>, scheme<span class="op">=</span><span class="st">"quantiles"</span>,</span>
 <span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>           figsize<span class="op">=</span>(<span class="dv">25</span>, <span class="dv">20</span>),</span>
@@ -1014,20 +982,29 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <p><img src="DH140_finalproject_files/figure-html/cell-36-output-1.png" class="img-fluid"></p>
 </div>
 </div>
+<p>Above is the world mapped with the average size of artworks created by artists from different countries/regions. Since the mapping starts at 75 square centimeters instead of 0, some part of the mapping is missing because of lack of data from those countries/regions.</p>
+<p>Compared with the last map, although Europe, North America, South America, Australia, and Asia are all among the list of region with the most amount of artworks collected in this dataset, only Asia has the largest average size of artworks, with the other region having about the median average size of artworks. This could show the difference of the criterion and aesthetics between western and eastern culture.</p>
 </section>
 </section>
 <section id="discussion" class="level2">
 <h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
+<p>Through the analysis of the five above graphs, we can see many underlying trends in this collection, with respect to date, gender, region, and size of artworks. This could reveal some implicit factors coming from and affecting how people view modern arts and how the collection is built.</p>
 <ul>
-<li>TODO: what does the analysis show, big picture, and how are they useful</li>
-<li>link back to research questions</li>
+<li>There are significantly more artworks by male artists than female artists and other artists.</li>
+<li>The size of artworks by female artists are genrally greater than male artists.</li>
+<li>The size of artworks increases exponentially by time.</li>
+<li>Artworks from some regions are more flavored than other regions in this collection.</li>
+<li>While the western culture flavors artworks of medium sizes, eastern culture has a prominent tendency on artworks with greater sizes.</li>
 </ul>
-<section id="conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
-</section>
+<p>Through these findings, we can see the difference between aesthetics and flavor of modern arts of different cultures, while we can also see the underrepresented groups in this collection. Based off these discoveries and reasonable inferences, we can still see the bias while we are appreciating artworks.</p>
+<p>While these implicit factors could affect the process of collecting and acknowledging artworks, it can also influence the way people view arts and establish their standards and perspectives of modern arts. This could even further influence the way artists create arts, whether explicitly and implicitly.</p>
+<p>It is impossible for people to completely avoid bias, whether during the process of collecting artworks, or even the way artworks are exhibited and shown to the public, but I believe that visualizing these underlying factors would allow us to see and acknowledge these biases, and be conscious of bias and differences, and to further think about and discover the underlying reasons and eventually becoming able to minimize them.</p>
 </section>
 <section id="reference" class="level2">
 <h2 class="anchored" data-anchor-id="reference">Reference</h2>
+<ul>
+<li>Part of the code on mapping and geopandas comes from https://melaniesoek0120.medium.com/data-visualization-how-to-plot-a-map-with-geopandas-in-python-73b10dcd4b4b.</li>
+</ul>
 
 
 </section>
