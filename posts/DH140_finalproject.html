@@ -198,22 +198,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="questions" class="level3">
 <h3 class="anchored" data-anchor-id="questions">Questions</h3>
 <ul>
-<li>What makes a certain type of artwork more common in modern arts and in this collection? Is it gender? Is it history backgrounds? Is it nationality, or even the size of the artwork itself?</li>
-<li>Are there underrepresented groups in this collection? If there are, what are these groups and what might be the cause of the underrepresentation?</li>
+<li><p>What makes a certain type of artwork more common in modern arts and in this collection? Is it gender? Is it history backgrounds? Is it nationality, or even the size of the artwork itself?</p></li>
+<li><p>Are there underrepresented groups in this collection? If there are, what are these groups and what might be the cause of the underrepresentation?</p></li>
 </ul>
 </section>
 <section id="motivation" class="level3">
 <h3 class="anchored" data-anchor-id="motivation">Motivation</h3>
 <ul>
-<li>Through exploring this dataset, I gradually becomes curious about these questions. The dataset itself is too large to find a certain pattern in it, but with the help of tools, it is possible for us to explore the whole dataset in condensed visualizations.</li>
-<li>Based off the methods we learned in class, I was interested in how mapping and text analysis could be applied in this dataset to visualize some invisible patterns in this dataset and hopefully approach my research questions and provide some insights into what are we seeing and not seeing in seemingly unbiased artwork collections and even some underrepresented artworks and groups in this collection. I hope that this project would allow us to see some implicit factors that are affecting our flavor of artworks, including reasonable factors and underlying biases.</li>
+<li><p>Through exploring this dataset, I gradually becomes curious about these questions. The dataset itself is too large to find a certain pattern in it, but with the help of tools, it is possible for us to explore the whole dataset in condensed visualizations.</p></li>
+<li><p>Based off the methods we learned in class, I was interested in how mapping and text analysis could be applied in this dataset to visualize some invisible patterns in this dataset and hopefully approach my research questions and provide some insights into what are we seeing and not seeing in seemingly unbiased artwork collections and even some underrepresented artworks and groups in this collection. I hope that this project would allow us to see some implicit factors that are affecting our flavor of artworks, including reasonable factors and underlying biases.</p></li>
 </ul>
 </section>
 </section>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
 <ul>
-<li>TODO: explain your data and your analytical process</li>
+<li><p>My first plan was to apply nltk text analysis on the title of the artworks to obtain compount sentiment scores and explore the relationships between the sentiment of artworks and other factors. Through my exploration, I found out that most of the title of artworks are neutral and could not be a great representation of the actual sentiment of the artwork. Thus, I decided to cut in from other variables, such as size, frequency, gender, and nationality.</p></li>
+<li><p>In order to rearrange data to be based on the date of the artworks, I created a new dataframe storing data corresponding to different decades, and created seperated columns for count of artworks from different time, number of artworks by artist of different genders in corresponding time period, and average size of artworks from the time period for artworks with respective data. Then I used this dataframe to plot the first two graph in the focused analysis part.</p></li>
+<li><p>I also wanted to create a bar plot on the average size of artworks and the gender of the artists who created the artworks, so I created two lists storing the gender in the original dataset and the corresponding average size of the artworks, and used the two lists to plot the third graph in the focused analysis part.</p></li>
+<li><p>Since the dataset contains comparably abundant data on the nationality of artists, I decided that mapping would be a great way to visualize these data and the relationship between geographic data and other data. I imported two new datasets helping me to add the names and code of the countries and regions corresponding to the nationality data, and then imported a geographic information dataset from the geopandas library, and added columns such as count and average size of artworks in this dataset to store the data obtained from the original artworks dataset. Then I used this new dataframe to plot the fourth and fifth mapping plot of the focused analysis part.</p></li>
 </ul>
 </section>
 <section id="results" class="level2">
@@ -232,14 +235,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pycountry</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> nltk</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.tokenize <span class="im">import</span> word_tokenize</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.sentiment <span class="im">import</span> vader</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.corpus <span class="im">import</span> stopwords</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.corpus <span class="im">import</span> opinion_lexicon</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.stem.porter <span class="im">import</span> PorterStemmer</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> nltk</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.tokenize <span class="im">import</span> word_tokenize</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.sentiment <span class="im">import</span> vader</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.corpus <span class="im">import</span> stopwords</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.corpus <span class="im">import</span> opinion_lexicon</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.stem.porter <span class="im">import</span> PorterStemmer</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># importing data</span></span>
@@ -990,11 +992,11 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
 <p>Through the analysis of the five above graphs, we can see many underlying trends in this collection, with respect to date, gender, region, and size of artworks. This could reveal some implicit factors coming from and affecting how people view modern arts and how the collection is built.</p>
 <ul>
-<li>There are significantly more artworks by male artists than female artists and other artists.</li>
-<li>The size of artworks by female artists are genrally greater than male artists.</li>
-<li>The size of artworks increases exponentially by time.</li>
-<li>Artworks from some regions are more flavored than other regions in this collection.</li>
-<li>While the western culture flavors artworks of medium sizes, eastern culture has a prominent tendency on artworks with greater sizes.</li>
+<li><p>There are significantly more artworks by male artists than female artists and other artists.</p></li>
+<li><p>The size of artworks by female artists are genrally greater than male artists.</p></li>
+<li><p>The size of artworks increases exponentially by time.</p></li>
+<li><p>Artworks from some regions are more flavored than other regions in this collection.</p></li>
+<li><p>While the western culture flavors artworks of medium sizes, eastern culture has a prominent tendency on artworks with greater sizes.</p></li>
 </ul>
 <p>Through these findings, we can see the difference between aesthetics and flavor of modern arts of different cultures, while we can also see the underrepresented groups in this collection. Based off these discoveries and reasonable inferences, we can still see the bias while we are appreciating artworks.</p>
 <p>While these implicit factors could affect the process of collecting and acknowledging artworks, it can also influence the way people view arts and establish their standards and perspectives of modern arts. This could even further influence the way artists create arts, whether explicitly and implicitly.</p>
